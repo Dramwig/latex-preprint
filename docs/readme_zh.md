@@ -9,7 +9,7 @@
 该项目提供了一个**简洁、美观的 LaTeX 预印本模板**，非常适合在 **arXiv**、**bioRxiv** 等平台投稿使用。
 本模板基于 [**arxiv-style**](https://github.com/kourgeorge/arxiv-style) 修改而来，而后者又源于 [**nips_2018.sty**](https://media.nips.cc/Conferences/NIPS2018/Styles/nips_2018.sty)。
 
-它同时支持**双栏（two-column）**与**单栏（single-column）**两种布局，可自由切换。
+它同时支持**双栏与单栏**两种布局，可自由切换。
 
 ---
 
