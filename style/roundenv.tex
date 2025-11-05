@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{roundenv}
+
+\usepackage{lipsum}
+
+\usepackage{amsmath,amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\begin{document}
+\section{Demo}
+
+\begin{theorem}[test]
+For a right triangle: $a^2+b^2=c^2$.
+\end{theorem}
+
+\begin{lemma}[test]
+This is a lemma boxed with rounded corners.
+\end{lemma}
+
+% 随时为环境增加样式
+\RTaddenv{equation}{RTtheorem}
+
+\begin{equation}
+    a+b
+\end{equation}
+
+% 全局样式可随时调整
+\RTsetup{boxrule=5.5pt}
+
+\begin{corollary}
+\lipsum[1]
+\end{corollary}
+
+\begin{roundenv} % 用默认 RTtheorem
+\lipsum[2]
+\end{roundenv}
+
+\begin{roundenv}[color=RTlemma]
+\lipsum[3]
+\end{roundenv}
+
+
+\end{document}
